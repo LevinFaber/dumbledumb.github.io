@@ -10,9 +10,11 @@ body {
     background-repeat: no-repeat;
     height: 500px;
     padding: 70px;
+    padding-top: 150px;
     font-size: 250%;
     background-attachment: fixed;
     background-size: cover;
+    border-bottom: 5px solid #434B53;
 }
 img{
     display: block;
@@ -34,6 +36,7 @@ img.qr{
 ul {
     margin: 0;
     padding: 0;
+    display: inline;
 }
 h1 {
     color: #919191;
@@ -55,5 +58,21 @@ nav {
     margin: 0;
     padding: 0;
     height: 80px;
+    width: 100%;
     border: 1px solid black;
+    position: fixed;
+    background-color: rgba(209, 209, 209, 0.9);
+}
+.barcode {
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 270%;
+    display: inline;
+    float: right;
+    padding: 20px;
+}
+
+div.channel {
+    width: 30%;
+    display: inline;
+    font-size: 200%;
 }
