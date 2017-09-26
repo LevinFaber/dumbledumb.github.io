@@ -1,20 +1,42 @@
-$( document ).ready(function() {
-function hover(element) {
-    element.fadeOut;
-    element.setAttribute('src', '/assets/qrcode.png');
-    element.classList.remove('bild');
-    element.classList.add('qr');
-}
-function unhover(element) {
-    element.setAttribute('src', '/assets/dumbledumb.jpg');
-    element.classList.remove('qr');
-    element.classList.add('bild');
-}
-var $root = $('html, body');
-$('a').click(function() {
-    $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
-    }, 500);
-    return false;
+$(document).ready(function(){
+
+$('#me').hover(function(){
+    $(this).attr('src', './assets/qrcode.png');
+    $(this).toggleClass('bild');
+    $(this).toggleClass('qr');
+},function(){
+    $(this).attr('src', './assets/dumbledumb.jpg');
+    $(this).toggleClass('bild');
+    $(this).toggleClass('qr');
 });
+  
+var activeIframe = "preview";
+$("#youtubeC").click(function() {
+    $(activeIframe).toggle(100);
+    $("#youtube").toggle(180);
+    activeIframe = "#youtube"
+});
+$("#steamC").click(function() {
+    $(activeIframe).toggle(100);
+    $("#steam").toggle(180);
+    activeIframe = "#steam"
+});
+$("#whatsappC").click(function() {
+    $(activeIframe).toggle(100);
+    $("#whatsapp").toggle(180);
+    activeIframe = "#whatsapp"
+});
+$("#gmailC").click(function() {
+    $(activeIframe).toggle(100);
+    $("#gmail").toggle(180);
+    activeIframe = "#gmail"
+});
+
+$('#waform').validate( {
+   
+};
+
+);
+
+
 });

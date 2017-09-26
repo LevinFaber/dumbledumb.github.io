@@ -43,20 +43,43 @@ body {
     display: block;
     text-align: center;
 }
+#whatsapp {
+    display: none;
+    width: 85%;
+}
+#gmail {
+    display: none;
+}
+input, textarea, label{
+    float: left;
+    clear: both;
+}
+.error {
+    color: #9C0000;
+}
+iframe {
+    height: 80vh;
+    width: 85%;
+    border: 0;
+    display: none;
+    margin: auto;
+}
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;  
 }
-img.bild{
+#me {
     width: 200px;
     height: 200px;
+}
+img.bild{
     border-radius: 50%;
     border: 0;
 }
 img.qr{
-    width: 200px;
-    height: 200px;
+    border-radius: 0;
+    border: 0;
 }
 
 ul {
