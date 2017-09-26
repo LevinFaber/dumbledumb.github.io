@@ -73,7 +73,7 @@ li {
     display: inline-block;
     width: auto;
     height: 8vh;
-    border: 1px solid black;
+
 }
 a {
     text-decoration: none;  
@@ -89,7 +89,7 @@ nav{
     padding: 0;
     height: 8vh;
     width: 100%;
-    border: 1px solid black;
+
     position: fixed;
     background-color: rgba(214, 214, 214, 0.89);
     overflow: hidden;
@@ -107,7 +107,7 @@ div.channel {
     display: inline-block;
     font-size: 200%;
     margin: 0 5vh;
-    border: 1px solid black;
+
     padding: 2vh;
     text-align: center;
 }
@@ -121,6 +121,6 @@ i {
 }
 div.wrapper {
     display: block;
-    border: 1px solid red;
+
 }
     
