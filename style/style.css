@@ -8,6 +8,7 @@ body {
 #home{
     background-image: url("/assets/background.jpg");
     background-repeat: no-repeat;
+    background-position-x: center;
     height: 500px;
     padding: 70px;
     padding-top: 150px;
@@ -15,6 +16,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     border-bottom: 5px solid #434B53;
+    text-align: center;
 }
 img{
     display: block;
@@ -40,7 +42,7 @@ ul {
 }
 h1 {
     color: #919191;
-    margin-left: 70px;
+
 }
 
 li {
@@ -53,6 +55,11 @@ li {
 }
 a {
     text-decoration: none;
+    
+}
+div {
+    width: auto;
+    display: inline-block;
 }
 nav {
     margin: 0;
@@ -62,6 +69,7 @@ nav {
     border: 1px solid black;
     position: fixed;
     background-color: rgba(209, 209, 209, 0.9);
+    overflow: hidden;
 }
 .barcode {
     font-family: 'Libre Barcode 39 Text', cursive;
@@ -71,8 +79,20 @@ nav {
     padding: 20px;
 }
 
+div.wrapper {
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
 div.channel {
-    width: 30%;
-    display: inline;
+    display: inline-flex;
     font-size: 200%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 2%;
+    
+}
+img {
+    width: 150px;
+    height: 150px;
 }
