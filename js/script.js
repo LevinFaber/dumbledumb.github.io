@@ -32,11 +32,6 @@ $("#gmailC").click(function() {
     activeIframe = "#gmail"
 });
 
-$('#waform').validate( {
+$('#waform').validate( );
    
-};
-
-);
-
-
 });
