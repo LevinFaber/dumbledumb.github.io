@@ -1,21 +1,45 @@
 * {
     font-family: 'Raleway', sans-serif;
     color: #565D64;  
+    background-image: none;
 }
-body {
-    margin: 0;
-}
-#home{
+#background {
     background-image: url("/assets/background.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
-    height: 500px;
-    padding: 70px;
-    padding-top: 150px;
-    font-size: 250%;
     background-attachment: fixed;
     background-size: cover;
-    border-bottom: 5px solid #434B53;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+#home{
+
+    height: 88vh;
+    font-size: 250%; 
+    text-align: center;
+    padding-top: 12vh;
+    display: flex;
+    flex-direction: column;
+}
+#socialmedia{
+    margin: auto;
+    padding: 4vh 1vh;
+    height: auto;
+    min-height: 88vh;
+    width: 90%;
+    background-color: rgba(214, 214, 214, 0.89);
+    border-radius: 1vh;
+    text-align: center;
+}
+#socialspacer {
+    padding-top: 8vh;
+    font-size: 250%;
+    width: 100%;
+    display: block;
     text-align: center;
 }
 img{
@@ -28,7 +52,6 @@ img.bild{
     height: 180px;
     padding: 10px;
     border-radius: 50%;
-    border-color: white;
 }
 img.qr{
     width: 200px;
@@ -41,35 +64,36 @@ ul {
     display: inline;
 }
 h1 {
-    color: #919191;
-
+    margin: 0 0 1vh 0;
 }
 
 li {
     font-size: 200%;
-    padding: 20px;
+    padding: 2vh;
     display: inline-block;
     width: auto;
-    height: 40px;
+    height: 8vh;
     border: 1px solid black;
 }
 a {
-    text-decoration: none;
-    
+    text-decoration: none;  
+    margin-top: auto;  
 }
 div {
     width: auto;
     display: inline-block;
 }
-nav {
+
+nav{
     margin: 0;
     padding: 0;
-    height: 80px;
+    height: 8vh;
     width: 100%;
     border: 1px solid black;
     position: fixed;
-    background-color: rgba(209, 209, 209, 0.9);
+    background-color: rgba(214, 214, 214, 0.89);
     overflow: hidden;
+    z-index: 2;
 }
 .barcode {
     font-family: 'Libre Barcode 39 Text', cursive;
@@ -79,20 +103,24 @@ nav {
     padding: 20px;
 }
 
-div.wrapper {
-    width: 80%;
-    display: flex;
-    margin: auto;
-}
-div.channel {
-    display: inline-flex;
+div.channel {    
+    display: inline-block;
     font-size: 200%;
-    margin: auto;
+    margin: 0 5vh;
     border: 1px solid black;
-    padding: 2%;
-    
+    padding: 2vh;
+    text-align: center;
 }
 img {
-    width: 150px;
-    height: 150px;
+    width: 20vh;
+    height: 20vh;
 }
+
+i {
+    color: rgba(219, 219, 219, 0.8);
+}
+div.wrapper {
+    display: block;
+    border: 1px solid red;
+}
+    

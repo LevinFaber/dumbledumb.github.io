@@ -7,44 +7,51 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Raleway" rel="stylesheet">
-    
-    <title>Document</title>
+    <script src="https://use.fontawesome.com/e8f025acaa.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <div id="background">
     <nav>
         <ul>
-            <li><a href="#homebackground">Home</a></li>
-            <li><a href="#socialmedia">Social Media</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#socialspacer">Social Media</a></li>
         </ul>
         <a class="barcode">Stylistic Element</a>
     </nav>
     <section id="home">
-            <a href="socialmedia"><img src="./assets/dumbledumb.jpg" alt="Dumbledumb" class="bild" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
             <h1>Welcome!</h1> 
+            <a href="socialmedia"><img src="./assets/dumbledumb.jpg" alt="Dumbledumb" class="bild" onmouseover="hover(this);" onmouseout="unhover(this);"></a>
+            <a href="#socialspacer"><i class="fa fa-angle-double-down fa-3x"></i></a>  
     </section>
-    <section id="#socialmedia">
+    <div id="socialspacer">
+            <a href="#home"><i class="fa fa-angle-double-up fa-3x"></i></a>
+    </div>
+    <section id="socialmedia">
         <div class="wrapper">
-        <div class="channel">
-            <img src="./assets/youtube.svg"></img>
-            <a href="youtube.com">YouTube</a>
+            <div class="channel">
+                <img src="./assets/youtube.svg"></img>
+                <a href="youtube.com">YouTube</a>
+                </div>
+            <div class="channel">
+                <img src="./assets/steam.svg"></img>
+                <a href="Steam.com">Steam</a>
+                </div>
+            <div class="channel">
+                <img src="./assets/whatsapp.svg"></img>
+                <a href="whatsapp.com">WhatsApp</a>
             </div>
-        <div class="channel">
-            <img src="./assets/steam.svg"></img>
-            </div>
-        <div class="channel">
-            <img src="./assets/whatsapp.svg"></img>
-        </div>
-        <div class="channel">
+            <div class="channel">
             <img src="./assets/gmail.svg"></img>
-        </div>
+            <a href="gmail.com">GMail</a>
+           </div>
         </div>
     </section>
     <footer>
-        <hr>
-        
     </footer>
-
+</div>
    <script src="/js/script.js"></script> 
+
 </body>
 </html>

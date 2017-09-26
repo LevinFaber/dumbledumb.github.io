@@ -1,3 +1,4 @@
+$( document ).ready(function() {
 function hover(element) {
     element.fadeOut;
     element.setAttribute('src', '/assets/qrcode.png');
@@ -9,3 +10,11 @@ function unhover(element) {
     element.classList.remove('qr');
     element.classList.add('bild');
 }
+var $root = $('html, body');
+$('a').click(function() {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+});
