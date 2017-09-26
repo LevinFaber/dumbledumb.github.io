@@ -51,8 +51,8 @@ img{
 img.bild{
     width: 200px;
     height: 200px;
-    padding: 10px;
     border-radius: 50%;
+    border: 0;
 }
 img.qr{
     width: 200px;
@@ -113,8 +113,11 @@ div.channel {
     text-align: center;
 }
 img {
-    width: 20vh;
-    height: 20vh;
+    background-color: white;
+    border: 20px solid white;
+    border-radius: 50%;
+    width: 15vh;
+    height: 15vh;
 }
 
 i {
@@ -132,4 +135,10 @@ div.wrapper {
         background-image: url("/assets/backgroundlarge.jpg");
     }
 }
+@media screen and (orientation: portrait){
+    #background{
+        background-image: url("/assets/backgroundportrait.jpg");
+    }
+}
+   
     
