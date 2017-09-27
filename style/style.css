@@ -28,16 +28,14 @@ div {
 div.channel {
     display: inline-block;
     font-size: 200%;
-    margin: 0 5vh;
     padding: 2vh;
     text-align: center;
-    }
-
+}
 
 img {
     box-sizing: content-box;
     background-color: white;
-    border: 20px solid white;
+    border: 2vh solid white;
     border-radius: 50%;
     width: 15vh;
     height: 15vh;
@@ -57,7 +55,7 @@ ul {
 }
 
 li {
-    font-size: 200%;
+    font-size: 4vh;
     padding: 2vh;
     display: inline-block;
     width: auto;
@@ -74,10 +72,15 @@ i {
 }
 
 iframe {
-    height: 80vh;
-    width: 85%;
+    width: 100%;
+    height: 60vh;
     border: 0;
     display: none;
+    margin: auto;
+}
+
+form {
+    width: 85%;
     margin: auto;
 }
 
@@ -104,6 +107,22 @@ label {
 .scrd {
     margin-top: auto;
 }
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 51%;
+    display: none;
+}
+
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
+
+  }
 
 /* IDS */
 
@@ -160,6 +179,7 @@ label {
     display: none;
 }
 
+
 /* MEDIA */
 @media screen and (min-width: 1548px) {
     #background {
@@ -170,5 +190,20 @@ label {
 @media screen and (orientation: portrait) {
     #background {
         background-image: url("/assets/backgroundportrait.jpg");
+    }
+    img {
+        box-sizing: content-box;
+        background-color: white;
+        border: 2vw solid white;
+        border-radius: 50%;
+        width: 15vw;
+        height: 15vw;
+        display: block;
+    }
+    div.channel {
+        font-size: 4vw;
+    }
+    li {
+        font-size: 6vw;
     }
 }

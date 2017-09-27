@@ -31,30 +31,37 @@
             </a>
         </div>
         <section id="socialmedia">
-            <div class="wrapper">
+
                 <div class="channel" id="youtubeC">
                     <img src="./assets/youtube.svg"></img>
-                    <a href="youtube.com">YouTube</a>
+                    <a href="youtube.com">YouTube</a>                    
                 </div>
+
                 <div class="channel" id="steamC">
                     <img src="./assets/steam.svg"></img>
                     <a href="Steam.com">Steam</a>
                 </div>
+
                 <div class="channel" id="whatsappC">
                     <img src="./assets/whatsapp.svg"></img>
                     <a href="whatsapp.com">WhatsApp</a>
                 </div>
+
                 <div class="channel" id="gmailC">
                     <img src="./assets/gmail.svg"></img>
                     <a href="gmail.com">GMail</a>
                 </div>
-            </div>
+
             <div class="wrapper">
                 <div id="preview">
                     <h2>Click the above icons for more info!</h2>
                 </div>
                 <br>
-                <iframe id="youtube" src="https://www.youtube.com/embed/yZnBQTe9KFg"></iframe>
+                <div class="aspect-ratio">
+                    <iframe id="youtube" src="https://www.youtube.com/embed/yZnBQTe9KFg"></iframe>
+                </div>
+                
+
                 <iframe id="steam" src="http://steamcommunity.com/id/dumbledumb"></iframe>
                 <div id="whatsapp">
                     <form id="waform" method="post" action="mailer.php">
@@ -66,7 +73,7 @@
                         <input type="digits" name="Phonenumber" id="ctel" placeholder="Your Phonenumber" required>
                         <label for="cmsg">Message:</label>
                         <textarea name="Message" id="cmsg" cols="30" rows="10" placeholder="Message" required></textarea>
-                        <input type="submit" value="submitWA">
+                        <input type="submit" value="Submit">
                     </form>
                 </div>
                 <div id="gmail"></div>

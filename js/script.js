@@ -18,24 +18,54 @@ $(document).ready(function () {
     //CHANNEL FRAMES
     var activeIframe = "preview";
     $("#youtubeC").click(function () {
-        $(activeIframe).toggle(100);
-        $("#youtube").toggle(180);
+        if(activeIframe ==="#youtube"){        
+        $(activeIframe).hide();
+        $(".aspect-ratio").hide();
+        activeIframe = "preview";
+        }
+        else{
+        $("iframe").hide();
+        $(".aspect-ratio").show();
+        $("#youtube").show(180);
         activeIframe = "#youtube"
+        
+        }
     });
     $("#steamC").click(function () {
-        $(activeIframe).toggle(100);
-        $("#steam").toggle(180);
-        activeIframe = "#steam"
+        if(activeIframe ==="#steam"){
+            $(activeIframe).hide();
+            activeIframe = "preview";
+        }
+        else{
+            $("iframe").hide();
+            $(".aspect-ratio").hide();
+            $("#steam").show(180);
+            activeIframe = "#steam"
+        }
     });
     $("#whatsappC").click(function () {
-        $(activeIframe).toggle(100);
-        $("#whatsapp").toggle(180);
-        activeIframe = "#whatsapp"
+        if(activeIframe ==="#whatsapp"){
+            $(activeIframe).hide();
+            activeIframe = "preview";
+        }
+        else{
+            $("iframe").hide();
+            $(".aspect-ratio").hide();
+            $("#whatsapp").show(180);
+            activeIframe = "#whatsapp"
+        }
     });
     $("#gmailC").click(function () {
-        $(activeIframe).toggle(100);
-        $("#gmail").toggle(180);
-        activeIframe = "#gmail"
+        if(activeIframe ==="#gmail"){
+            $(activeIframe).hide();
+            activeIframe = "preview";
+        }
+        else{
+            $("iframe").hide();
+            $(".aspect-ratio").hide();
+            $("#gmail").show(180);
+            activeIframe = "#gmail"
+        }
     });
     //CHANNEL FRAMES
 
