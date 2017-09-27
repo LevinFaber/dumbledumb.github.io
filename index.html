@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <title>Levin Faber</title>
-    <meta name="theme-color" content="#317EFB"/>
+    <meta name="theme-color" content="#317EFB" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,70 +14,73 @@
 
 <body>
     <div id="background">
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#socialspacer">Social Media</a></li>
-        </ul>
-        <a class="barcode">Stylistic Element</a>
-    </nav>
-    <section id="home">
-            <h1>Welcome!</h1> 
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#socialspacer">Social Media</a></li>
+            </ul>
+            <a class="barcode">Stylistic Element</a>
+        </nav>
+        <section id="home">
+            <h1>Welcome!</h1>
             <img src="./assets/dumbledumb.jpg" alt="Dumbledumb" class="bild" id="me">
-    </section>
-    <div class="wrapper">
+        </section>
+        <div class="wrapper">
             <a id="socialspacer" href="#socialspacer">
                 <i id="arrow" class="fa fa-angle-double-down fa-3x"></i>
             </a>
-    </div>
-    <section id="socialmedia">
-        <div class="wrapper">
-            <div class="channel" id="youtubeC">
-                <img src="./assets/youtube.svg"></img>     
-                <a href="youtube.com">YouTube</a>                          
+        </div>
+        <section id="socialmedia">
+            <div class="wrapper">
+                <div class="channel" id="youtubeC">
+                    <img src="./assets/youtube.svg"></img>
+                    <a href="youtube.com">YouTube</a>
                 </div>
-            <div class="channel"  id="steamC">
-                <img src="./assets/steam.svg"></img>
-                <a href="Steam.com">Steam</a>
+                <div class="channel" id="steamC">
+                    <img src="./assets/steam.svg"></img>
+                    <a href="Steam.com">Steam</a>
                 </div>
-            <div class="channel"  id="whatsappC">
-                <img src="./assets/whatsapp.svg"></img>
-                <a href="whatsapp.com">WhatsApp</a>
+                <div class="channel" id="whatsappC">
+                    <img src="./assets/whatsapp.svg"></img>
+                    <a href="whatsapp.com">WhatsApp</a>
+                </div>
+                <div class="channel" id="gmailC">
+                    <img src="./assets/gmail.svg"></img>
+                    <a href="gmail.com">GMail</a>
+                </div>
             </div>
-            <div class="channel"  id="gmailC">
-            <img src="./assets/gmail.svg"></img>
-            <a href="gmail.com">GMail</a>
-           </div>
-        </div>
-        <div class="wrapper">
-        <div id="preview"><h2>Click the above icons for more info!</h2></div>
-        <br>
-        <iframe id="youtube" src="https://www.youtube.com/embed/yZnBQTe9KFg"></iframe>
-        <iframe id="steam" src="http://steamcommunity.com/id/dumbledumb"></iframe>
-        <div id="whatsapp">
-            <form id="waform" method="post" action="mailer.php">
-                <label for="cname">Name:</label>
-                <input type="text" name="Name" id="cname" placeholder="Name" minlength="3" required>
-                <label for="cemail">Email:</label>
-                <input type="email" name="email" id="cemail" placeholder="example@email.com" required>
-                <label for="ctel">Phone:</label>
-                <input type="digits" name="Phonenumber" id="ctel" placeholder="Your Phonenumber"required>
-                <label for="cmsg">Message:</label>
-                <textarea name="Message" id="cmsg" cols="30" rows="10" placeholder="Message" required></textarea>
-                <input type="submit" value="submitWA">
-            </form>
-        </div>
-        <div id="gmail"></div>
-        </div>
-    </section>
-    <footer>
-    </footer>
-</div>
+            <div class="wrapper">
+                <div id="preview">
+                    <h2>Click the above icons for more info!</h2>
+                </div>
+                <br>
+                <iframe id="youtube" src="https://www.youtube.com/embed/yZnBQTe9KFg"></iframe>
+                <iframe id="steam" src="http://steamcommunity.com/id/dumbledumb"></iframe>
+                <div id="whatsapp">
+                    <form id="waform" method="post" action="mailer.php">
+                        <label for="cname">Name:</label>
+                        <input type="text" name="Name" id="cname" placeholder="Name" minlength="3" required>
+                        <label for="cemail">Email:</label>
+                        <input type="email" name="email" id="cemail" placeholder="example@email.com" required>
+                        <label for="ctel">Phone:</label>
+                        <input type="digits" name="Phonenumber" id="ctel" placeholder="Your Phonenumber" required>
+                        <label for="cmsg">Message:</label>
+                        <textarea name="Message" id="cmsg" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <input type="submit" value="submitWA">
+                    </form>
+                </div>
+                <div id="gmail"></div>
+            </div>
+        </section>
+        <footer>
+        </footer>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/js/script.js"></script> 
+    <script src="/js/script.js"></script>
     <script src="https://use.fontawesome.com/e8f025acaa.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
 
 
 </body>
+
 </html>
