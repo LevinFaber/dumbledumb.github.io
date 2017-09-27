@@ -19,7 +19,7 @@ body {
 
 #home{
 
-    height: 100vh;
+    height: 75vh;
     font-size: 250%; 
     text-align: center;
     padding-top: 12vh;
@@ -50,6 +50,7 @@ body {
 #gmail {
     display: none;
 }
+
 input, textarea, label{
     float: left;
     clear: both;
