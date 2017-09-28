@@ -17,7 +17,7 @@ $(document).ready(function () {
     });
     //CHANNEL FRAMES
 
-    //CHANNEL FRAMES
+    
     var activeIframe = "preview";
     $(".channel").click(function(){
         var ident = this.id;
@@ -35,7 +35,7 @@ $(document).ready(function () {
             activeIframe = ident
         }
         });
-
+    //CHANNEL FRAMES
 
     //SCROLL ARROWS
     var $root = $('html, body');
@@ -66,5 +66,9 @@ $(document).ready(function () {
 
     })
     //SCROLL ARROWS
+
+
+
+    //VAC COUNTER
 
 });
