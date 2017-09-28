@@ -15,7 +15,7 @@ $(document).ready(function (){
     }
 
     var vac = new httpClient();
-    vac.get("http://api.steampowered.com/ISteamUser/GetPlayerBans/v1/?key=F8DF424E6BEF5A29D4722D548536B7F5&steamids=76561198077704323", 
+    vac.get("http://api.steampowered.com/ISteamUser/GetPlayerBans/v1/?key=AAD42D5DE55845AFF3E16ED82A426E36&steamids=76561198077704323", 
     function(response){
         var varResponse = JSON.parse(response);
         console.log(varResponse);
