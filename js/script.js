@@ -16,58 +16,25 @@ $(document).ready(function () {
 
     });
     //CHANNEL FRAMES
-    var activeIframe = "preview";
-    $("#youtubeC").click(function () {
-        if(activeIframe ==="#youtube"){        
-        $(activeIframe).hide();
-        $(".aspect-ratio").hide();
-        activeIframe = "preview";
-        }
-        else{
-        $("iframe").hide();
-        $(".aspect-ratio").show();
-        $("#youtube").show(180);
-        activeIframe = "#youtube"
-        
-        }
-    });
-    $("#steamC").click(function () {
-        if(activeIframe ==="#steam"){
-            $(activeIframe).hide();
-            activeIframe = "preview";
-        }
-        else{
-            $("iframe").hide();
-            $(".aspect-ratio").hide();
-            $("#steam").show(180);
-            activeIframe = "#steam"
-        }
-    });
-    $("#whatsappC").click(function () {
-        if(activeIframe ==="#whatsapp"){
-            $(activeIframe).hide();
-            activeIframe = "preview";
-        }
-        else{
-            $("iframe").hide();
-            $(".aspect-ratio").hide();
-            $("#whatsapp").show(180);
-            activeIframe = "#whatsapp"
-        }
-    });
-    $("#gmailC").click(function () {
-        if(activeIframe ==="#gmail"){
-            $(activeIframe).hide();
-            activeIframe = "preview";
-        }
-        else{
-            $("iframe").hide();
-            $(".aspect-ratio").hide();
-            $("#gmail").show(180);
-            activeIframe = "#gmail"
-        }
-    });
+
     //CHANNEL FRAMES
+    var activeIframe = "preview";
+    $(".channel").click(function(){
+        var ident = this.id;
+        console.log(ident)
+        $("#contentwrapper").children().hide();
+        if(activeIframe === ident){
+            $("#preview").show();
+            activeIframe = "preview";
+        }else if(ident === "youtube"){
+            $(".aspect-ratio").show();
+            $("#youtubeC").show();
+            activeIframe = ident
+        }else{
+            $(`#${ident}C`).show();
+            activeIframe = ident
+        }
+        });
 
 
     //SCROLL ARROWS
@@ -91,6 +58,13 @@ $(document).ready(function () {
     }
     getpos();
     $(window).scroll(getpos);
+
+    $("i").hover(function(){
+        $("i").fadeTo("fast", 1);
+    }, function(){
+        $("i").fadeTo("fast", 0.6);
+
+    })
     //SCROLL ARROWS
 
 });

@@ -68,7 +68,8 @@ a {
 }
 
 i {
-    color: rgba(219, 219, 219, 0.8);
+    color: rgba(219, 219, 219, 1);
+    opacity: 0.6;
 }
 
 iframe {
@@ -100,7 +101,6 @@ label {
     font-family: 'Libre Barcode 39 Text', cursive;
     font-size: 270%;
     display: inline;
-    float: right;
     padding: 2vh;
 }
 
@@ -170,13 +170,9 @@ label {
     text-align: center;
 }
 
-#whatsapp {
+#whatsappC {
     display: none;
     width: 85%;
-}
-
-#gmail {
-    display: none;
 }
 
 

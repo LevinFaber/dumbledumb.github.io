@@ -32,38 +32,42 @@
         </div>
         <section id="socialmedia">
 
-                <div class="channel" id="youtubeC">
+                <div class="channel" id="youtube">
                     <img src="./assets/youtube.svg"></img>
                     <a href="youtube.com">YouTube</a>                    
                 </div>
 
-                <div class="channel" id="steamC">
+                <div class="channel" id="steam">
                     <img src="./assets/steam.svg"></img>
                     <a href="Steam.com">Steam</a>
                 </div>
 
-                <div class="channel" id="whatsappC">
+                <div class="channel" id="whatsapp">
                     <img src="./assets/whatsapp.svg"></img>
                     <a href="whatsapp.com">WhatsApp</a>
                 </div>
 
-                <div class="channel" id="gmailC">
+                <div class="channel" id="gmail">
                     <img src="./assets/gmail.svg"></img>
                     <a href="gmail.com">GMail</a>
                 </div>
 
-            <div class="wrapper">
+            <div id="contentwrapper" class="wrapper">
+
                 <div id="preview">
                     <h2>Click the above icons for more info!</h2>
                 </div>
+
                 <br>
+                
                 <div class="aspect-ratio">
-                    <iframe id="youtube" src="https://www.youtube.com/embed/yZnBQTe9KFg"></iframe>
+                    <iframe id="youtubeC" src="https://www.youtube.com/embed/yZnBQTe9KFg"></iframe>
                 </div>
                 
 
-                <iframe id="steam" src="http://steamcommunity.com/id/dumbledumb"></iframe>
-                <div id="whatsapp">
+                <iframe id="steamC" src="http://steamcommunity.com/id/dumbledumb"></iframe>
+
+                <div id="whatsappC">
                     <form id="waform" method="post" action="mailer.php">
                         <label for="cname">Name:</label>
                         <input type="text" name="Name" id="cname" placeholder="Name" minlength="3" required>
@@ -76,7 +80,8 @@
                         <input type="submit" value="Submit">
                     </form>
                 </div>
-                <div id="gmail"></div>
+
+                <div id="gmailC"></div>
             </div>
         </section>
         <footer>
